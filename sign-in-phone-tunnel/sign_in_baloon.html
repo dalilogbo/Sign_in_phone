@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style_sign_in_baloon.css" type="text/css">
+    <title>Sign in <form action=""></form></title>
+</head>
+<body>
+    <div class="login-root">
+        <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+          <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+            <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+              <a href="http://baloon.ci/" rel="dofollow"> <img src="images/logoBaloon.png" alt="logo Baloon" class="logo_baloon"> </a>
+            </div>
+            <div class="formbg-outer">
+              <div class="formbg">
+                <div class="formbg-inner padding-horizontal--48">
+                  <span class="padding-bottom--15 addit-identifier">S'Identifier</span>
+                  <form id="stripe-login">
+
+                    <div class="field padding-bottom--24">
+                      <div class="grid--50-50">
+                        <label for="phone">Téléphone</label>
+                      </div>
+                      <input type="phone" name="phone">
+                    </div>
+
+                    <div class="field padding-bottom--24">
+                      <div class="grid--50-50">
+                        <label for="password">Password</label>
+                      </div>
+                      <input type="password" name="password">
+                    </div>
+
+                    <div class="addit-buttons">
+                      <input type="submit" name="submit" value="Continuer" class="addit-button-primary">
+                      <a class="addit-button-secondary">Revenir</a>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
