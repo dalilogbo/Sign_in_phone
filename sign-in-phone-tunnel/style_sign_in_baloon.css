@@ -1,63 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-
-* {
-    padding: 0;
-    margin: 0;
-    color: #1a1f36;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    font-family: 'Raleway', sans-serif;
-  }
-
-  body {
-      min-height: 100%;
-      background-color: #ffffff;
-  }
-  h1 {
-      letter-spacing: -1px;
-  }
-  a {
-    color: #ba931c;
-    text-decoration: unset;
-  }
-
   .logo_baloon{
     width: 10rem;
   }
-
   
-strong {
-  font-size: 1rem;
-}
-
-li {
-  font-size: 1rem;
-}
-
-.country-name {
-  font-size: 1rem;
-}
-
-  .login-root {
+  .addit-login-root {
       background: #fff;
+      padding: 0;
+      margin: 0;
       display: flex;
       width: 100%;
       min-height: 100vh;
       overflow: hidden;
+      font-family: 'Raleway', sans-serif;
+      color: #1a1f36;
   }
-  .loginbackground {
-      min-height: 692px;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 0;
-      z-index: 0;
-      overflow: hidden;
-  }
-
 
   .addit-buttons{
     display: flex;
@@ -68,7 +26,8 @@ li {
     background-color:#ba931c;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
-    font-family: 'Raleway';
+    border: none;
+    font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 500;
     color: white;
@@ -83,7 +42,7 @@ li {
     background-color:#1c3f4f;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 500;
     color: white;
@@ -94,10 +53,16 @@ li {
     cursor: pointer;
   }
 
-
-  .flex-flex {
+  .addit-flex-flex {
       display: flex;
   }
+
+  .addit-style{
+    min-height: 100vh;
+    flex-grow: 1;
+    z-index: 9;
+  }
+
   .align-center {
     align-items: center; 
   }
@@ -105,57 +70,50 @@ li {
     align-items: center;
     justify-content: center;
   }
-  .box-root {
+  .addit-box-root {
       box-sizing: border-box;
   }
-  .flex-direction--column {
+  .addit-flex-direction--column {
       -ms-flex-direction: column;
       flex-direction: column;
   }
-  .box-divider--light-all-2 {
-      box-shadow: inset 0 0 0 2px #e3e8ee;
-  }
   
-  .padding-top--64 {
-    padding-top: 64px;
-  }
-  .padding-top--24 {
+  .addit-padding-top--24 {
     padding-top: 24px;
   }
-  .padding-top--48 {
+  .addit-padding-top--48 {
     padding-top: 48px;
   }
-  .padding-bottom--24 {
+  .addit-padding-bottom--24 {
     padding-bottom: 24px;
   }
-  .padding-horizontal--48 {
+  .addit-padding-horizontal--48 {
     padding: 48px;
   }
-  .padding-bottom--15 {
+  .addit-padding-bottom--15 {
     padding-bottom: 15px;
   }
   
-  
-  .flex-justifyContent--center {
+  .addit-flex-justifyContent--center {
     -ms-flex-pack: center;
     justify-content: center;
   }
   
-  .formbg {
+  .addit-formbg {
       margin: 0px auto;
-      width: 100%;
+      width: 90%;
       max-width: 448px;
       background: white;
       border-radius: 4px;
       box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
   }
-  span {
+  .addit-span {
       display: block;
       font-size: 20px;
       line-height: 28px;
       color: #1a1f36;
   }
-  label {
+  .addit-label {
       margin-bottom: 10px;
       font-weight: 600;
       color:#3d3d3a ;
@@ -167,20 +125,21 @@ li {
     color:#3d3d3a ;
   }
   
-  .grid--50-50 {
+  .addit-grid--50-50 {
       display: grid;
       grid-template-columns: 50% 50%;
       align-items: center;
   }
   
-  .field input {
+  .addit-field input {
+      box-sizing: border-box;
       font-size: 16px;
       color:#3d3d3a ;
       line-height: 28px;
       padding: 8px 16px;
       width: 100%;
       min-height: 44px;
-      border: unset;
+      border: none;
       border-radius: 4px;
       outline-color: #33687f;
       background-color: rgb(255, 255, 255);
@@ -193,7 +152,7 @@ li {
                   rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   }
   
-  input[type="submit"] {
+  .addit-input[type="submit"] {
       background-color:  #ba931c;
       border: none;
       box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
@@ -208,8 +167,7 @@ li {
       cursor: pointer;
   }
 
-
-  .input_button:hover{
+  .addit-input_button:hover{
     background-color: #33687f;
     box-shadow: none;
     border: none;
