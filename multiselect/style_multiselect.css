@@ -10,22 +10,22 @@
   margin: 1.5rem;
   display: flex;
   justify-content: flex-start;
+  width: 100%;
 }
 
 .addit-selection{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
-
-select,
-summary {
+.addit-summary {
   box-sizing: border-box;
   border: 1px solid var(--addit-lt-gray);
   border-collapse: collapse;
-  border-radius: 4px;
-  padding: 10px;
+  border-radius: 6px;
+  padding: 10px 20px;
   max-width: 30rem;
   min-height: 44px;
   background-color: white;
@@ -36,8 +36,7 @@ summary {
   cursor: pointer;
 }
 
-select,
-details {
+.addit-details {
   box-sizing: border-box;
   display: inline-block;
   max-width: 30rem;
@@ -45,17 +44,16 @@ details {
   cursor: pointer;
 }
 
-details[open] > summary::marker {
+.addit-details[open] > summary::marker {
     color: var(--addit-yellow);
 }
 
-select:focus,
-summary:focus,
-summary:active {
+.addit-summary:focus,
+.addit-summary:active {
     box-shadow: 0 0 5px 1px var(--addit-yellow);
 }
 
-ul { 
+.addit-ul { 
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -63,17 +61,18 @@ ul {
     border: 1px solid var(--addit-yellow);
     box-shadow: 0 0 5px 1px var(--addit-lt-gray);
 }
-li {
+.addit-li {
     margin: 0px;
     padding: 0px;
 }
-li > label {
+.addit-li > label {
     cursor: pointer;
     display: inline-block;
     width: 100%;
 }
-li > label:hover,
-li > label:has(input:checked) {
+
+.addit-li > label:hover,
+.addit-li > label:has(input:checked) {
     background-color: var(--addit-yellow);
     color: white;
 }
